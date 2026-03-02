@@ -29,7 +29,7 @@ export default function Stats() {
                     {metrics.map((metric, index) => (
                         <div
                             key={index}
-                            className="group p-8 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 hover:border-emerald-500/40 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.15)] flex flex-col justify-center"
+                            className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.15)] flex flex-col justify-center hardware-accelerated"
                         >
                             <div className="flex items-baseline gap-3 mb-3">
                                 <span className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-emerald-400 to-emerald-600 block">

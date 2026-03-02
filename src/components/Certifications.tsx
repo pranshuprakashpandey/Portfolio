@@ -22,13 +22,13 @@ export default function Certifications() {
                     {certs.map((cert, idx) => (
                         <div
                             key={idx}
-                            className="group relative p-[1px] rounded-3xl bg-gradient-to-b from-white/10 to-transparent hover:from-white/20 transition-all duration-500 shadow-xl"
+                            className="group relative p-[1px] rounded-3xl bg-gradient-to-b from-white/10 to-transparent hover:from-white/20 transition-all duration-500 shadow-xl hardware-accelerated"
                         >
                             {/* Inner Card Container */}
-                            <div className="h-full w-full bg-slate-950/80 backdrop-blur-xl rounded-[23px] p-8 flex flex-col items-center text-center justify-center min-h-[220px] relative z-10 overflow-hidden transform group-hover:-translate-y-1 transition-transform duration-500">
+                            <div className="h-full w-full bg-slate-950/90 rounded-[23px] p-8 flex flex-col items-center text-center justify-center min-h-[220px] relative z-10 overflow-hidden transform group-hover:-translate-y-1 transition-transform duration-500 hardware-accelerated">
                                 {/* Subtle top glow based on cert color */}
-                                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r ${cert.color} blur-[2px] opacity-70 group-hover:opacity-100 transition-opacity`}></div>
-                                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-b ${cert.color} blur-[40px] opacity-20 group-hover:opacity-40 transition-opacity`}></div>
+                                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r ${cert.color} blur-[1px] opacity-70 group-hover:opacity-100 transition-opacity`}></div>
+                                <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-b ${cert.color} blur-[30px] opacity-15 group-hover:opacity-30 transition-opacity`}></div>
 
                                 <h3 className={`text-2xl font-bold mb-3 ${cert.accent}`}>{cert.name}</h3>
                                 <p className="text-sm text-slate-300 font-medium leading-relaxed">{cert.role}</p>
